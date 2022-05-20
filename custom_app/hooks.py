@@ -193,3 +193,24 @@ app_license = "MIT"
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+fixtures = [{"dt": "Custom Field", "filters": [
+		[
+			"dt", "in", [
+				"Item"
+				]
+		]
+	]},
+	{"dt": "Custom Script", "filters": [
+		[
+			"dt", "in", [
+				"Item"
+				]
+		]
+	]},
+	{"dt": "Property Setter", "filters": [
+		[
+			"doc_type", "in", [
+				"Item"
+				]
+		]
+	]}]
