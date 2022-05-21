@@ -30,7 +30,7 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+#doctype_list_js = {"Item" : "public/js/item.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -104,7 +104,8 @@ app_license = "MIT"
 
 doc_events = {
 	"Item":{
-		"validate":"custom_app.overrides.item.update_custom_field"
+		"validate":["custom_app.overrides.item.update_custom_field","custom_app.overrides.item.update_uom_table"],
+		#"on_update":"custom_app.overrides.item.update_uom_table"
 	},
 }
 
